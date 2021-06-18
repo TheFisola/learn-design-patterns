@@ -4,5 +4,6 @@ import com.thefisola.patterns.behavioral.chain.of.responsibility.model.Transacti
 
 public interface WalletTransferValidationChain {
     WalletTransferValidationChain nextChain(WalletTransferValidationChain walletTransferValidationChain);
+
     void process(TransactionRequest request);
 }
