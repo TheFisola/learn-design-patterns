@@ -36,7 +36,7 @@ public class TransactionRequest {
         this.validAccountState = validAccountState;
     }
 
-    private String reference = UUID.randomUUID().toString();
+    private final String reference = UUID.randomUUID().toString();
 
     public long getAmount() {
         return amount;

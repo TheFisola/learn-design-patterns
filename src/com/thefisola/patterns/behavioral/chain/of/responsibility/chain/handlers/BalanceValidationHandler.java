@@ -17,7 +17,7 @@ public class BalanceValidationHandler implements WalletTransferValidationChain {
     @Override
     public void process(TransactionRequest request) {
         long mockWalletBalance = 30000;
-        if(request.getAmount() > mockWalletBalance) throw new InsufficientFundsException("Insufficient Funds");
+        if (request.getAmount() > mockWalletBalance) throw new InsufficientFundsException("Insufficient Funds");
         System.out.println("Balance validation passed....");
         request.setValidBalance(true);
         walletTransferValidationChain.process(request);
