@@ -3,10 +3,10 @@ package com.thefisola.patterns.behavioral.chain.of.responsibility.model;
 import java.util.UUID;
 
 public class TransactionRequest {
+    private final String reference = UUID.randomUUID().toString();
     private long amount;
     private String senderId;
     private String receiverId;
-
     // validation states
     private boolean validBalance = false;
     private boolean validKycLevel = false;
@@ -35,8 +35,6 @@ public class TransactionRequest {
     public void setValidAccountState(boolean validAccountState) {
         this.validAccountState = validAccountState;
     }
-
-    private final String reference = UUID.randomUUID().toString();
 
     public long getAmount() {
         return amount;
