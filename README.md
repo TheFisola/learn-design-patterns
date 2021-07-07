@@ -1,3 +1,3 @@
 # learn-design-patterns
 
-COLLECTION OF OBJECT ORIENTED DESIGN PATTERNS WRITTEN IN JAVA
+A collection of object-oriented design patterns written in Java.
